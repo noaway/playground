@@ -14,7 +14,7 @@ a {
 	color: #009;
 }
 
-#output, .lines {
+#output{
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 11pt;
 }
@@ -24,8 +24,8 @@ a {
 	width: 100%;
     height: 72%;
 	overflow: auto;
+	font-size: 14px;
 }
-
 
 .editor {
     position: absolute;
@@ -34,15 +34,14 @@ a {
     border: 0;
     width: 100%;
     height: 900px;
-    padding-left: 61px;
-	padding-top: 0px;
+    padding-left: 3.8em;
 	padding-bottom: 0px;
     background: none;
     color: rgba(0, 0, 0, 0) !important;
     caret-color: white;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
     line-height: 1.5;
-    font-size: 16px;
+    font-size:inherit;
     word-spacing: normal;
     word-break: normal;
     outline: none;
@@ -60,11 +59,10 @@ a {
     padding-bottom: 0em !important;
 	padding-right: 0em !important;
 	overflow-x: hidden !important;
+	font-size: inherit !important;
 }
 
 #output {
-	/* position: absolute; */
-	/* top: 75%; */
 	height: 30px;
 	bottom: 0;
 	left: 0;
