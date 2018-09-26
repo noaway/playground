@@ -1,0 +1,128 @@
+html {
+	height: 100%;
+}
+body {
+	color: black;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 43, 54, 1)
+}
+
+a {
+	color: #009;
+}
+
+#output, .lines {
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 11pt;
+}
+
+#wrap{
+	position: relative;
+	width: 100%;
+    height: 72%;
+	overflow: auto;
+}
+
+
+.editor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 900px;
+    padding-left: 61px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    background: none;
+    color: rgba(0, 0, 0, 0) !important;
+    caret-color: white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
+    line-height: 1.5;
+    font-size: 16px;
+    word-spacing: normal;
+    word-break: normal;
+    outline: none;
+    tab-size: 4;
+    hyphens: none;
+    resize: none;
+	box-sizing: border-box; 
+}
+
+.editor-pre{
+    background: none !important;
+    min-width: 200px;
+    margin: 0 !important;
+    padding-top: 0em !important;
+    padding-bottom: 0em !important;
+	padding-right: 0em !important;
+	overflow-x: hidden !important;
+}
+
+#output {
+	/* position: absolute; */
+	/* top: 75%; */
+	height: 30px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 8px;
+	color:rgba(133, 153, 33, 1);
+}
+#output .system, #output .loading {
+	color: #999;
+}
+#output .stderr, #output .error {
+	color: #900;
+}
+#output pre {
+	margin: 0;
+}
+#banner {
+	height: 50px;
+	background-color: rgba(0, 64, 82, 1);
+}
+#head {
+	float: left;
+	margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#controls {
+	float: left;
+    margin-top: 15px;
+    min-width: 245px;
+}
+#controls > input {
+	border: 0px;
+    background-color: rgba(0, 64, 82, 1);
+	color: rgba(213,218,218,1);
+	cursor: pointer;
+}
+
+input[type=button]{
+	outline: none;
+	min-width: 6em;
+    font-size: 14px;
+    background: rgba(58,58,58,1);
+    color: rgba(192,197,197,1);
+    border: 1px solid rgba(84,83,83,1);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin: 0 0.5em;
+	padding: 0.3em 1em;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+#shareURL {
+	width: 280px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	background: #eee;
+	color: black;
+	height: 23px;
+}
