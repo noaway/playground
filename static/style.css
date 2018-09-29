@@ -124,3 +124,18 @@ input[type=button]{
 	color: black;
 	height: 23px;
 }
+
+@media(min-device-width:1078px){
+	input:focus,textarea:focus{
+		font-size: 14px !important;
+	}
+}
+
+@media(min-device-width:320px) and (max-device-width:1077px){
+	input:focus,textarea:focus{
+		font-size: 14px !important;
+	}
+	#share,#fmt{
+		display: none;
+	}
+}
