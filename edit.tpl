@@ -63,9 +63,9 @@
 			var pre = document.getElementById('pre');
 			var editorContent = document.getElementById('code');
 			copy(pre, editorContent); 
-			editorContent.addEventListener('input', function () {
+			$(editorContent).on('input keydown',function(){
 				copy(pre, editorContent)
-			});
+			})
 			
 			var autoExpand = function (field) {
 				field.style.height = 'inherit';
