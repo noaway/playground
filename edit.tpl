@@ -3,8 +3,8 @@
 	<head>
 		<title>Noaway play</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-		<link rel="stylesheet" href="/static/style.css">
-		<link href="/static/prism.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/static/style.min.css">
+		<link href="/static/prism.min.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id="banner">
@@ -29,8 +29,8 @@
 	<div id="output"></div>
 	</body>
 	<script src="/static/jquery.min.js"></script>
-	<script src="/static/playground.js"></script>
-	<script src="/static/prism.js"></script>
+	<script src="/static/prism.min.js"></script>
+	<script src="/static/playground.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			playground({
@@ -78,10 +78,10 @@
 				field.style.height = height + 'px';
 			};
 
-			document.addEventListener('input', function (event) {
+			$(document).on('input',function(){
 				if (event.target.tagName.toLowerCase() !== 'textarea') return;
 				autoExpand(event.target);
-			}, false);					
+			})
 			
 			function copy(pre, editor) {
 				pre.innerText = editor.value;

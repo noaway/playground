@@ -1,0 +1,24 @@
+html{height:100%}
+body{color:#000;padding:0;margin:0;width:100%;height:100%;background-color:rgba(0,43,54,1)}
+a{color:#009}
+#output{font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:11pt}
+#wrap{position:relative;width:100%;height:72%;overflow:auto;font-size:14px}
+.editor{position:absolute;top:0;left:0;border:0;width:100%;height:900px;padding-left:3.8em;padding-bottom:0;background:0 0;color:transparent!important;caret-color:#fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace!important;line-height:1.5;font-size:inherit;word-spacing:normal;word-break:normal;outline:0;tab-size:4;hyphens:none;resize:none;box-sizing:border-box}
+.editor-pre{background:0 0!important;min-width:200px;margin:0!important;padding-top:0!important;padding-bottom:0!important;padding-right:0!important;overflow-x:hidden!important;font-size:inherit!important}
+#output{height:30px;bottom:0;left:0;right:0;padding:8px;color:rgba(133,153,33,1)}
+#output .loading,#output .system{color:#999}
+#output .error,#output .stderr{color:#900}
+#output pre{margin:0}
+#banner{height:50px;background-color:rgba(0,64,82,1)}
+#head{float:left;margin-top:15px;margin-left:15px;font-size:20px;font-family:sans-serif}
+#controls{float:left;margin-top:15px;min-width:245px}
+#controls>input{border:0;background-color:rgba(0,64,82,1);color:rgba(213,218,218,1);cursor:pointer}
+input[type=button]{outline:0;min-width:6em;font-size:14px;background:rgba(58,58,58,1);color:rgba(192,197,197,1);border:1px solid rgba(84,83,83,1);border-radius:3px;box-shadow:0 1px 2px rgba(0,0,0,.2);margin:0 .5em;padding:.3em 1em;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace}
+#shareURL{width:280px;font-size:16px;border:1px solid #ccc;background:#eee;color:#000;height:23px}
+@media(min-device-width:1078px){
+input:focus,textarea:focus{font-size:14px!important}
+}
+@media(min-device-width:320px) and (max-device-width:1077px){
+input:focus,textarea:focus{font-size:14px!important}
+#fmt,#share{display:none}
+}

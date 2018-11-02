@@ -353,6 +353,9 @@ function PlaygroundOutput(el) {
       return $(opts.codeEl).val();
     }
     function setBody(text) {
+      var pre = $("#pre");
+      pre.text(text)
+      Prism.highlightElement(pre[0]);
       $(opts.codeEl).val(text);
     }
     function origin(href) {
