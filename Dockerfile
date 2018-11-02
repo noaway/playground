@@ -1,6 +1,7 @@
 FROM golang 
 LABEL maintainer "noawayer@gmail.com"
 
+ENV MEMCACHED_ADDR=mecached:11211
 ENV GOPATH /go
 ENV PATH /usr/local/go/bin:$GOPATH/bin:$PATH
 ENV GOROOT_BOOTSTRAP /usr/local/gobootstrap
